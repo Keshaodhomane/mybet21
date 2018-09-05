@@ -1,0 +1,2135 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700');
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+}
+
+p {
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+}
+
+.main-wrapper {
+	display: grid;
+	grid-template-columns: 91px 230px 2fr 1fr;
+}
+
+.header {
+	grid-column: 1/5;
+	background-color: green;
+	display: grid;
+	grid-template-columns: 321px 1fr;
+	background: url(../images/header-bg.jpg) no-repeat center top;
+	background-size: cover;
+	grid-gap: 0px;
+}
+
+.topstrip {
+	background: rgba(0, 0, 0, 0.3);
+	grid-column: 1/3;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	color: #FFFFFF;
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 7px 20px;
+}
+
+.topstrip>div {
+	align-self: center;
+}
+
+.topstrip>div:nth-child(1) {
+	justify-self: start;
+}
+
+.topstrip>div:nth-child(3) {
+	justify-self: end;
+}
+
+.topstrip>div:nth-child(2) marquee {
+	justify-self: start;
+}
+
+.topstrip>div .custom-select {
+	background-color: transparent;
+	border: none;
+	background: url(../images/drop-arrow.svg) no-repeat right center;
+	padding-right: 40px;
+	width: 131px;
+	font-size: 0.8rem;
+}
+
+.topstrip>div select {
+	color: #ADD487 !important;
+	background-color: transparent !important;
+	border: none !important;
+	font-family: roboto;
+}
+
+.topstrip>div select option {
+	color: black;
+}
+
+.logo-search-strip {
+	grid-column: 2/3;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px 20px 0 20px;
+}
+
+.logo-search-strip>div:nth-child(1) {
+	justify-self: end;
+}
+
+#inlineFormInputName2 {
+	background: transparent;
+	height: auto;
+	border: none;
+	color: #fff !important;
+	margin-top: 7px;
+}
+
+#inlineFormInputName2::placeholder {
+	color: #ADD487 !important;
+}
+
+.logo-search-strip>div:nth-child(2) {
+	justify-self: end;
+}
+
+.searchitem {
+	color: #fff;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.searchitem::before {
+	content: url(../images/search-icon.svg);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.user>div {
+	color: #fff;
+	display: inline-block;
+	margin-top: 7px;
+}
+
+.user>div>span {
+	color: #ADD487;
+}
+
+.user>div .greendot {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #6EC318;
+	margin: 0 10px;
+}
+
+.user>div .greendot .dropdown {
+	float: left;
+}
+
+.logo {
+	grid-column: 1;
+	grid-row: 2/4;
+	align-self: center;
+	text-align: center;
+}
+
+.logo>div {
+	padding: 20px 0;
+}
+
+.navlinks {
+	background: #63883E;
+	border-radius: 10px 0 0 0;
+	padding-top: 12px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	align-self: end;
+}
+
+.navlinks .nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+	background-color: #113E2B;
+	border-radius: 22px;
+	border: 1px solid rgba(176, 223, 129, 0.7);
+}
+
+.navlinks .nav-pills .nav-link {
+	transition: background-color 1s ease;
+}
+
+.navlinks .nav-pills .nav-link:hover {
+	background-color: #113E2B;
+	border-radius: 22px;
+	border: 1px solid rgba(176, 223, 129, 0.7);
+}
+
+.navlinks .nav-pills .nav-link {
+	font-family: "roboto condensed";
+	font-weight: 700;
+	color: #fff;
+	margin: 0 10px;
+}
+
+.sports-menu {
+	grid-column: 0.5fr;
+	background: #245A32;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 109px;
+}
+
+.sports-menu>div {
+	border-bottom: 1px solid rgb(99, 136, 62);
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr;
+	cursor: pointer;
+	transition: background-color 0.5s ease;
+}
+
+.sports-menu .active-sport {
+	background-color: #0D3323;
+}
+
+.sports-menu>div:hover {
+	background-color: #0D3323;
+}
+
+.sports-menu>div>div {
+	align-self: center;
+	justify-self: center;
+}
+
+.sports-menu>div>div img {
+	width: 35px;
+	height: auto;
+}
+
+.sports-menu>div>div p {
+	line-height: 20px;
+	font-family: "roboto condensed";
+	color: #ADD487;
+	font-size: 0.8rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: 5px;
+}
+
+.sports-menu>div:last-child {
+	border: none;
+}
+
+.sport-submenu {
+	border-left: 1px solid #84A341;
+	border-top: 1px solid #84A341;
+	background: #EAEAEA;
+}
+
+.greenheading {
+	background: #0D3323;
+	padding: 15px;
+}
+
+.greenheading p {
+	font-weight: bold;
+	color: #8AC352;
+}
+
+.greenheading h3 {
+	font-family: "roboto condensed";
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #fff;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.lightgreen-heading {
+	background: #2A6334;
+	padding: 15px;
+}
+
+.lightgreen-heading p {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+
+.lightgreen-heading p a {
+	color: #fff;
+	font-family: "roboto condensed";
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+ul,
+li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.leftlinks li a {
+	display: block;
+	border-bottom: 1px solid #D9DCDA;
+	line-height: 2.3rem;
+	font-size: 0.9rem;
+	font-family: "roboto";
+	color: #000;
+	background: url(../images/icon-bullet.svg) no-repeat 5px center;
+	padding-left: 25px;
+	background-size: 12px auto;
+	font-weight: bold;
+	transition: all 0.5s ease;
+}
+
+.leftlinks li .activebull,
+.leftlinks li a:hover {
+	background: #fff url(../images/icon-bullet-hover.svg) no-repeat 5px center;
+	background-size: 15px auto;
+	text-decoration: none;
+	-webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+}
+
+.betting-odds {
+	background: #fff;
+}
+
+.green-odds-title {
+	background: #113E2B;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	color: #fff;
+	padding: 15px 15px;
+}
+
+.green-odds-title>div {
+	justify-self: center;
+	align-self: center;
+}
+
+.green-odds-title>div h3 {
+	color: #fff;
+	font-family: "roboto condensed";
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin: 0;
+	padding: 0;
+}
+
+.whitematchtitle {
+	background: #fff;
+	padding: 10px 0;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+.whitematchtitle>div:nth-child(2) {
+	align-self: center;
+	justify-self: center;
+}
+
+.whitematchtitle>div:nth-child(1) {
+	align-self: start;
+	justify-self: end;
+}
+
+.whitematchtitle>div:nth-child(3) {
+	align-self: start;
+	justify-self: start;
+}
+
+.whitematchtitle>div>h3 {
+	margin: 0;
+	padding: 0;
+	font-family: "roboto condensed";
+	color: #000;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.whitematchtitle>div>p {
+	color: #0D3323;
+	text-align: center;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.odds-greybg {
+	background: #F4F4F4;
+	border-top: 1px solid #DBDBDB;
+	border-bottom: 1px solid #DBDBDB;
+	padding: 25px 27px;
+}
+
+.oddbox {
+	display: grid;
+	grid-template-columns: 232px 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px;
+}
+
+.oddbox .blue-dark {
+	grid-column: 3/5;
+}
+
+.oddbox .pink-dark {
+	grid-column: 5/7;
+}
+
+.oddbox>div {
+	border-right: none;
+	border-collapse: collapse;
+	text-align: center;
+	align-self: end;
+	justify-self: stretch;
+	padding: 15px 0 8px 0;
+}
+
+.blue-dark {
+	background: #63BAF2;
+	border-radius: 30px 0 0 0;
+}
+
+.pink-dark {
+	background: #FF9EB7;
+	border-radius: 0px 30px 0 0;
+}
+
+.blue-dark h6,
+.pink-dark h6 {
+	font-family: "roboto condensed";
+	font-weight: bold;
+}
+
+.whiteboxshadow {
+	background: #fff;
+	border-radius: 10px;
+	border: 1px solid #DBDBDB;
+	-webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+	font-family: "roboto condensed";
+	font-weight: bold;
+}
+
+.whiteboxshadow>div:not(:last-child) {
+	border-bottom: 1px solid #AEAEAE;
+}
+
+.oddbox-content>div:nth-child(1)>div {
+	padding-left: 20px;
+}
+
+.oddbox-content>div:nth-child(1)>div>h5 {
+	background: url(../images/icon-graph.svg) no-repeat left center;
+	background-size: 20px auto;
+	padding-left: 25px;
+	cursor: pointer;
+}
+
+.oddbox-content {
+	display: grid;
+	grid-template-columns: 232px 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 60px;
+}
+
+.whiteboxshadow>div:first-child>div:last-child {
+	border-radius: 0 10px 0 0;
+}
+
+.whiteboxshadow>div:last-child>div:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+.oddbox-content>div {
+	/* padding: 12px 5px; */
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.oddbox-content>div>div {
+	align-self: center;
+	justify-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+.oddbox-content h5,
+.oddbox-content h6,
+.oddbox-content p {
+	margin: 0;
+	padding: 0;
+	font-weight: bold !important;
+	font-family: "roboto condensed";
+}
+
+.oddbox-content h5 {
+	font-size: 1rem;
+}
+
+.oddbox-content h6 {
+	font-size: 0.85rem;
+}
+
+.oddbox-content>div:not(:nth-child(1)) {
+	text-align: center;
+	cursor: pointer;
+}
+
+
+.suspended-columns > div:nth-child(2)
+{
+	grid-column: 2/8;
+}
+
+
+.light-blue {
+	background-color: #D4E8F5;
+}
+
+.medium-blue {
+	background-color: #B2D5ED;
+}
+
+.dark-blue {
+	background-color: #63BAF2;
+}
+
+.light-pink {
+	background-color: #F9E4EA;
+}
+
+.medium-pink {
+	background-color: #F4D0D8;
+}
+
+.dark-pink {
+	background-color: #FF9EB7;
+}
+
+.dark-grey
+{
+	background:#D5D5D5;
+}
+
+
+.dark-pink-left-curve
+{
+	background-color: #FF9EB7;
+	border-radius: 30px 0 0 0;
+	font-weight: bold;
+}
+
+.dark-blue-right-curve
+{
+	background-color: #63BAF2;
+	border-radius: 0px 30px 0 0;
+	font-weight: bold;	
+}
+
+
+.dark-blue-right-curve h6, .dark-pink-left-curve h6
+{
+	font-weight:bold;
+}
+
+
+.greenarrow {
+	background: url(../images/icon-green-arrow.svg) no-repeat left center;
+	background-size: 10px auto;
+	padding-left: 15px !important;
+	color: #648F07;
+	font-weight: bold;
+}
+
+.redarrow {
+	background: url(../images/icon-red-arrow.svg) no-repeat left center;
+	background-size: 10px auto;
+	padding-left: 15px !important;
+	color: #D01A2D;
+	font-weight: bold;
+}
+
+.fancy-bet-heading {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 10px 20px;
+}
+
+.fancy-bet-heading>div:nth-child(2) {
+	align-self: center;
+	justify-self: center;
+}
+
+.fancy-bet-heading>div:nth-child(3) {
+	align-self: center;
+	justify-self: end;
+}
+
+.fancy-bet-heading h3 {
+	font-family: "roboto condensed";
+	font-size: 1.5rem;
+	font-weight: bold;
+	background: url(../images/icon-clock.svg) no-repeat left center;
+	padding-left: 30px;
+	background-size: 21px auto;
+}
+
+.oddbox2 {
+	display: grid;
+	grid-template-columns: 232px 1fr 1fr 1fr;
+	grid-template-rows: 50px;
+}
+
+.oddbox2>div {
+	border-right: none;
+	border-collapse: collapse;
+	text-align: center;
+	align-self: end;
+	justify-self: stretch;
+	padding: 15px 0 8px 0;
+}
+
+.fancybetgrid {
+	display: grid;
+	grid-template-columns: 232px 1fr 1fr 1fr;
+	grid-auto-rows:minmax(60px, auto) ;
+}
+
+.fancybetgrid>div {
+	display: grid;
+	grid-template-columns: 1fr;
+	position: relative;;
+}
+
+.fancybetgrid>div>div {
+	align-self: center;
+	justify-self: center;
+	
+
+}
+
+
+
+.fancybetgrid>div>div h6,
+.fancybetgrid>div>div p {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+
+}
+
+
+.fancybetgrid>div>div h6{ font-size: 0.9rem;}
+
+.tabbedpanel {
+	padding-top: 20px;
+}
+
+.tabsalign {
+	display: block;
+	height: 42px;
+	;
+}
+
+.tabsalign>ul,
+.tabsalign>ul li {
+	display: inline-block;
+}
+
+.tabsalign>ul>li a {
+	background: #F4F4F4 !important;
+	width: 200px;
+	font-weight: bold;
+	color: #000 !important;
+	border: 1px solid #DBDBDB;
+	border-radius: 10px 10px 0 0;
+	border-bottom: none;
+}
+
+.tabsalign>ul>li .active {
+	background: #fff !important;
+	width: 200px;
+	font-weight: bold;
+	color: #000 !important;
+	border: 1px solid #DBDBDB;
+	border-radius: 10px 10px 0 0;
+	border-bottom: none;
+}
+
+.tabsalign {
+	text-align: center;
+}
+
+.allthreeboxes {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.allthreeboxes>div:nth-child(3) {
+	grid-column: 2;
+	grid-row: 1/3;
+}
+
+.allthreeboxes>div {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: auto;
+	align-self: start;
+}
+
+.greentitle2 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background: #2A6334;
+	padding: 5px 15px 5px 5px;
+	border-radius: 10px 10px 0 0;
+}
+
+.greentitle2 h3 {
+	color: #fff;
+	font-family: "roboto condensed";
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+.greentitle2>div:nth-child(1) {
+	padding-left: 20px;
+	align-self: center !important;
+	justify-self: start;
+}
+
+.greentitle2>div:nth-child(2) {
+	align-self: start !important;
+	justify-self: end;
+}
+
+.smallboxgrid-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: 1fr;
+	position: relative;
+}
+
+.smallboxgrid-container>div:not(:last-child) {
+	border-bottom: 1px solid #AEAEAE;
+}
+
+.smallboxesgrid {
+	display: grid;
+	grid-template-columns: 180px 1fr 1fr;
+	grid-auto-rows: minmax(60px, auto);
+}
+
+.smallboxesgrid>div {
+	display: grid;
+	grid-template-columns: 1fr;
+	border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.smallboxesgrid>div:last-child {
+	border: none;
+}
+
+.smallboxgrid-container>div:first-child {
+	background: #EAEAEA;
+	grid-template-rows: minmax(40px, auto);
+}
+
+.smallboxesgrid h5 {
+	background: url(../images/icon-graph.svg) no-repeat left center;
+	background-size: 20px auto;
+	cursor: pointer;
+	margin-left: 10px;
+	padding-left: 25px;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+.smallboxesgrid>div>div {
+	align-self: center;
+	justify-self: center;
+}
+
+.smallboxesgrid>div:first-child>div {
+	align-self: center;
+	justify-self: start;
+}
+
+.smalltext {
+	font-size: 0.7rem;
+	text-align: center;
+}
+
+.smalltext span {
+	background: #D01D2F;
+	display: inline-block;
+	padding: 2px 5px;
+	color: #fff;
+	border-radius: 2px;
+	margin-left: 5px !important;
+	cursor: pointer;
+}
+
+.smallboxgrid-container>div:last-child>div:last-child {
+	border-radius: 0 0 10px 0;
+}
+
+.smallboxesgrid>div>div h6,
+.smallboxesgrid>div>div p {
+	padding: 0;
+	margin: 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+.smallboxesgrid h6 {
+	font-size: 0.86rem;
+	padding: 0;
+	margin: 0;
+}
+
+.redbutton {
+	text-align: center;
+	width: 100%;
+	display: block;
+	margin-top: 2px;
+}
+
+.redbutton a {
+	background: #D01D2F;
+	color: #fff !important;
+	font-family: "roboto condensed";
+	font-weight: bold;
+	font-size: 1rem;
+	padding: 5px 10px;
+	border-radius: 0 0 5px 5px;
+	cursor: pointer;
+}
+
+
+.placebid-section {
+	background: #FBFBFB;
+}
+
+
+
+.greentitle3 {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-auto-rows: minmax(40px, auto);
+	background: #2A6334;
+	padding: 0 20px;
+}
+
+.greentitle3 h3 {
+	color: #fff;
+	font-family: "roboto condensed";
+	font-weight: bold;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+}
+
+.greentitle3>div:nth-child(1) {
+	align-self: center !important;
+	justify-self: start;
+}
+
+.greentitle3>div:nth-child(2) {
+	align-self: center !important;
+	justify-self: end;
+}
+
+
+.betfor 
+{
+    background: #84a341;
+    
+    display: grid;
+    grid-template-columns:150px 1fr 1fr 1fr;
+    grid-auto-rows: minmax(32px, auto);
+    font-family: "roboto condensed";
+    font-size:0.9rem;
+	font-weight: bold;
+	color: #fff;
+
+
+}
+
+
+.betfor > div:not(first-child)
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.betfor > div:first-child
+{
+    padding-left: 20px;
+    justify-self: start;
+
+}
+
+.unchecked-item
+{
+    background:#EAEAEA;
+    padding: 10px 20px;
+    
+}
+
+.unchecked-item h6
+{
+    font-family: "roboto condensed";
+    font-size:0.9rem;
+    font-weight: bold;
+    
+}
+
+
+.checkeditem
+{
+    
+    display: grid;
+    grid-template-columns:150px 1fr 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    color: #000;
+    font-family: "roboto condensed";
+    font-weight: bold;
+    font-size: .9rem;
+    padding: 5px 10px;
+}
+
+.checkeditem > div:not(first-child)
+{
+    align-self: center;
+    justify-self: center;
+}
+
+.checkeditem > div:first-child
+{
+    padding-left: 20px;
+    justify-self: start;
+}
+
+.liability
+{
+    font-weight: bold;
+    font-size: .9rem;
+    font-family: "roboto condensed";
+    line-height: 30px;
+    text-align: right;
+    padding: 10px 20px;
+}
+
+
+.footer-copyright {
+	grid-column: 1/5;
+	background-color: #0C2F20;
+	text-align: center;
+	color: #ADD487;
+	font-size: 0.8rem;
+	padding: 10px 0;
+}
+
+.betbuttons
+{
+
+    display: block;
+	text-align: center;
+	padding-bottom:20px;
+}
+
+
+.betbuttons a
+{
+    display:inline-block;
+    padding: 4px 0;
+    width: 80px;
+    margin:0 5px;
+    color: #fff;
+    font-family: "roboto condensed";
+	font-weight: bold;
+	font-size: 0.8rem;
+    border-radius: 5px;
+
+}
+
+
+.green-button
+{
+    background: #63883E;
+
+}
+
+
+.red-button
+{
+    background: #D01D2F;
+}
+
+
+.grey-button
+{
+	background:#808080;
+}
+
+
+
+
+.main-wrapper-internal {
+	display: grid;
+	grid-template-columns: 91px 230px 2fr 1fr;
+}
+
+
+
+
+
+.main-wrapper-internal  .betting-odds
+{
+    
+    grid-column: 2/5;
+}
+
+.mybetnavbg
+{
+    background:#2A6334;
+    display:grid;
+    grid-template-columns: 4fr 1fr;
+    
+}
+
+
+.mybetnavbg > div:last-child
+{
+    justify-self: end;
+    align-self: center;
+    padding-right: 20px;
+}
+
+
+.simplenav a
+{
+    font-family: "roboto condensed";
+    color: #fff;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 15px 30px;
+    transition: all 0.8s ease;
+}
+
+.simplenav .nav-pills .nav-link.active, .simplenav .nav-pills .show>.nav-link, .simplenav .nav-pills .nav-link:hover
+{
+border-radius: 0 !important;
+background: #84A341;
+color: #0D3323;
+
+}
+
+.simplenav .nav-pills .nav-link.active
+{
+    color: #0D3323;
+}
+
+.right-grey-button a
+{
+    font-family: "roboto condensed";
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.right-grey-button  a span
+{
+    color: #2A6334;
+}
+
+
+.internal-content
+{
+    padding:25px;
+    font-family:"roboto condensed";
+}
+
+.page-title h2
+{
+    font-family: "roboto condensed";
+    font-size: 1.5rem;
+    color:#0D3323;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+
+.filter-options
+{
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+
+}
+
+
+.filter-options .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle
+{
+background-color: #0D3323;
+border: none;
+}
+
+
+.filter-options .btn-secondary
+{
+    background-color:#84A341 ;
+    border:none;
+    width: 120px;
+}
+
+.filter-options .form-group
+{
+    margin-right: 15px;
+}
+
+.match a
+{
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #2A6334;
+}
+
+
+
+.match .active
+{
+    color: #000000;
+    text-decoration: underline;
+}
+
+.datediv span
+{
+    font-weight: bold;
+    color: #2A6334;
+}
+
+.datediv a
+{
+    color: #2A6334;
+    text-decoration: underline;
+}
+
+.refresh-icon a
+{
+    width: 45px;
+    display:inline-block;
+    text-align:center;
+    background: #84A341;
+    padding: 6px 0;
+    border-radius: 5px;
+    
+}
+
+.refresh-icon
+{
+    align-self: end;
+    justify-self: end;
+}
+
+.mybets-table
+{
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+
+
+
+.mybetstableheadings 
+{
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows: 50px;
+    
+}
+
+.mybetstableheadings > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.mybetstableheadings > div:nth-child(odd)
+{
+    background: #54782F;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.mybetstableheadings > div:nth-child(even)
+{
+    background: #63883E;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.mybetstableheadings > div > div
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.mybetstableheadings > div:nth-child(2) > div:nth-child(1)
+{
+    align-self: center ;
+    justify-self: start ;
+    
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-table-content 
+{
+
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-auto-rows:minmax(90px, auto);
+    border-bottom: 1px solid #D6D6D6;
+    
+    
+    
+}
+
+.grid-table-content > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-table-content > div:nth-child(odd)
+{
+    background: #EEEEEE;
+    color: #0D3323;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+
+
+.grid-table-content > div:nth-child(even)
+{
+    background: #fff;
+    color: #0D3323;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+
+.grid-table-content > div > div
+{
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.grid-table-content h6
+{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0D3323;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: left;
+    line-height: 1.3rem;
+}
+
+.grid-table-content p
+{
+    font-family: "roboto";
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+.grid-table-content p span
+{
+    color: #2A6334;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+.grid-table-content > div:nth-child(2) > div:nth-child(1)
+{
+    align-self: center ;
+    justify-self: start ;    
+    padding-left: 20px;
+    font-weight: normal;
+}
+
+.inplaybutton
+{
+    background:#84A341;
+    border-radius: 5px;
+    padding: 5px 20px;
+    color: #fff;
+    transition: all 2s ease;
+}
+
+
+.inplaybutton:hover
+{
+    text-decoration: none;
+    color: #fff;
+    background: #0D3323;
+}
+
+.red-text
+{
+    color: #EA1D00 !important;
+}
+
+
+.green-text
+{
+    color: #1C862E !important;
+}
+
+
+
+.dark-red-text{ color:#B51929;}
+
+.text-message{ font-family:"roboto condensed"; font-size:0.8rem; font-weight: bold; padding:10px 0 5px 0;}
+
+
+.red-background
+{
+	background-color: #EA1D00 !important;
+}
+
+
+
+
+
+
+
+
+
+.profit-loss-table 
+{
+
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr ;
+    grid-auto-rows: 50px;
+    
+}
+
+.profit-loss-table > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.profit-loss-table > div:nth-child(odd)
+{
+    background: #54782F;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.profit-loss-table > div:nth-child(even)
+{
+    background: #63883E;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.profit-loss-table > div > div
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.profit-loss-table > div:nth-child(1) > div:nth-child(1)
+{
+    align-self: center ;
+    justify-self: start ;
+    
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grid-table-content-profit
+{
+
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr ;
+    grid-auto-rows:minmax(90px, auto);
+    border-bottom: 1px solid #D6D6D6;
+    
+    
+    
+}
+
+.grid-table-content-profit > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-table-content-profit > div:nth-child(odd)
+{
+	background: #fff;
+    color: #0D3323;
+    font-weight: bold;
+	transition: all 1s ease;
+}
+
+
+
+.grid-table-content-profit > div:nth-child(even)
+{
+   
+	
+	background: #EEEEEE;
+    color: #0D3323;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+
+.grid-table-content-profit > div > div
+{
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.grid-table-content-profit h6
+{
+    font-weight: bold;
+    font-size: 1rem;
+    color: #0D3323;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+.grid-table-content-profit p
+{
+    font-family: "roboto";
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+.grid-table-content-profit p span
+{
+    color: #2A6334;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+.grid-table-content-profit > div:nth-child(1) > div:nth-child(1)
+{
+    align-self: center ;
+    justify-self: start ;    
+    padding-left: 20px;
+	font-weight: normal;
+	
+}
+
+
+.filter-options .form-control
+{
+color: #63883E !important;
+font-weight: bold;
+}
+
+.dark-green
+{
+	background: #2A6334;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.account-statement-table 
+{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 4fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+    grid-auto-rows: 50px;
+    
+}
+
+.account-statement-table > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.account-statement-table > div:nth-child(odd)
+{
+    background: #54782F;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+.account-statement-table > div:nth-child(even)
+{
+    background: #63883E;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.account-statement-table > div > div
+{
+    align-self: center;
+    justify-self: center;
+}
+
+
+.account-statement-table > div:nth-child(4) > div:nth-child(1)
+{
+    align-self: center ;
+    justify-self: start ;
+	padding-left: 20px;
+	
+}
+
+.account-statement-table > div:nth-child(4) > div:nth-child(1) h6
+{
+	text-align: left !important;
+}
+
+
+
+
+.grid-table-content-account-statement
+{
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 4fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+    grid-auto-rows:minmax(90px, auto);
+    border-bottom: 1px solid #D6D6D6;
+    
+    
+    
+}
+
+.grid-table-content-account-statement > div
+{
+    display:grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-table-content-account-statement > div:nth-child(even)
+{
+	background: #fff;
+    color: #0D3323;
+    font-weight: bold;
+	transition: all 1s ease;
+}
+
+
+
+.grid-table-content-account-statement > div:nth-child(odd)
+{
+   
+	
+	background: #EEEEEE;
+    color: #0D3323;
+    font-weight: bold;
+    transition: all 1s ease;
+}
+
+
+.grid-table-content-account-statement > div > div
+{
+    align-self: center;
+    justify-self: center;
+    
+}
+
+.grid-table-content-account-statement  h6
+{
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #0D3323;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: block;
+    text-align: center;
+    line-height: 1.3rem;
+}
+
+.grid-table-content-account-statement p
+{
+    font-family: "roboto";
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+.grid-table-content-account-statement p span
+{
+    color: #2A6334;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+
+.grid-table-content-account-statement > div:nth-child(4) > div:nth-child(1)
+{
+    align-self: left ;
+    justify-self: start ;    
+    padding-left: 10px;
+	font-weight: normal;
+	
+	
+}
+
+
+.grid-table-content-account-statement > div:nth-child(4) > div:nth-child(1) h6
+{
+	text-align: left !important;
+}
+
+
+
+
+
+
+.home-wrapper
+{
+	display: grid;
+	grid-template-columns:91px 1fr;
+
+}
+
+.home-wrapper .sports-menu
+{
+	grid-column: 1;
+	grid-row: 1/3;
+}
+
+
+.home-wrapper .footer-copyright
+{
+	grid-column: 1/3;
+}
+
+
+.sports-header-bg
+{
+	background: url(../images/homepage-sports-bg.jpg) no-repeat center top;
+	background-size: cover;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+
+
+}
+
+
+
+
+.homepage-logo
+{
+grid-column: 1/3;
+align-self: end;
+justify-self: center;
+}
+
+
+.nav-blank 
+{
+	height: 67px;
+	align-self: end;
+}
+
+.homepage-nav
+{
+	height: 67px;
+	align-self: end;
+	background: #63883E;
+	border-radius: 10px 0 0 0;
+}
+
+
+
+
+.green-formbg
+{
+	background: #0D4116;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 1fr ;
+	grid-gap:20px;
+	font-family: "roboto condensed";
+	color: #fff;
+}
+
+.green-formbg > div
+{
+
+	
+
+}
+
+.home-signup
+{
+	grid-column: 2;
+	grid-row: 1;
+	align-self: center;
+	justify-self: center;
+	text-align: center;
+	
+}
+
+.home-login
+{
+	grid-column: 3;
+	grid-row: 1;
+	border-left: 1px solid rgba(132, 163, 65, 0.2);
+}
+
+.home-signup h5
+{
+	font-weight: bold;
+	color: #ADD487;
+	font-size: 1rem;
+}
+
+.home-signup .btn-success, .home-login .btn-success
+{
+	background: #84A341;
+		border: none;
+		font-family: "roboto condensed";
+		font-weight: bold;
+		font-size: 1rem;
+}
+
+.form-width
+{
+	width: 200px;
+	margin:50px auto 0 auto;
+}
+
+
+.input-group input, .input-group input:focus
+{
+	background: transparent;
+	border: none;
+}
+
+
+.input-group 
+{
+	background: #fff;
+	display: grid;
+	grid-template-columns: 25px auto;
+	border-radius: 5px;
+	
+}
+
+.input-group  .fa{color: #15442D; margin-left:8px;}
+
+.input-group > div:nth-child(1)
+{
+	align-self: center;
+	justify-content: center;
+}
+
+
+.form-width form > div:nth-child(3) .input-group
+{
+	grid-template-columns: auto 80px ;
+	background: #fff;
+}
+
+.form-width form > div:nth-child(3) .input-group > div:nth-child(2)
+{
+	justify-self:center;
+	align-self: center;
+	
+}
+
+
+.home-signup > div:nth-child(1)
+{
+	border-bottom: 1px solid rgba(132, 163, 65, 0.2);
+	padding-bottom:20px;
+}
+
+.home-signup > div:nth-child(2)
+{
+	padding-top:20px;
+}
+
+.home-signup > div:nth-child(2) h5
+{
+	padding-top:20px;
+}
+
+
+.checked-odd-even 
+{
+	padding-bottom: 30px;
+}
+
+
+
+
+
+.checkeditem1
+{
+    
+    display: grid;
+    grid-template-columns:150px 1fr 1fr 1fr;
+    grid-auto-rows: minmax(35px, auto);
+    color: #000;
+    font-family: "roboto condensed";
+    font-weight: bold;
+    font-size: .8rem;
+    padding: 5px 10px;
+}
+
+.checkeditem1 > div:not(first-child)
+{
+    align-self: center;
+    justify-self: center;
+}
+
+.checkeditem1 > div:first-child
+{
+    padding-left: 10px;
+    justify-self: start;
+}
+
+
+.checkeditem1 p
+{
+	font-weight: normal;
+}
+
+.closebutton
+{
+	display: inline-block;
+	width: 12px;
+	background: url(../images/closebutton.svg) no-repeat center center;
+	background-size: 12px auto;
+	
+	
+
+}
+.closebutton:hover
+{
+	color: #fff;
+	text-decoration:none;
+}
+
+.small-back-button
+{
+	background:#63BAF2;
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+	padding:1px 8px;
+	color: #000;
+	font-size: .8rem;
+	border-radius: 4px;
+	
+}
+
+
+.small-lay-button
+{
+	background:#FF9EB7;
+	display: inline-block;
+	*display:inline;
+	zoom:1;
+	padding:1px 8px;
+	color: #000;
+	font-size: .8rem;
+	border-radius: 4px;
+	
+}
+
+.small-lay-button:hover, .small-back-button:hover
+{
+	text-decoration:none;
+	color: #000;
+	
+}
+
+
+
+/* Add position:relative to the parent div to use ladder icon */
+
+.ladder-black
+{
+	background: url(../images/icon-ladder.svg) no-repeat center center;
+	display: block;
+	height:15px;
+	width: 9px;
+	position: absolute;
+	z-index: 9999;
+	top:calc(50% - 8px);
+	right:10px;
+}
+
+
+.ladder-grey
+{
+	background: url(../images/icon-ladder-light.svg) no-repeat center center;
+	display: block;
+	height:15px;
+	width: 9px;
+	position: absolute;
+	z-index: 9999;
+	top:calc(50% - 8px);
+	right:10px;
+}
+
+
+.run-psl-table 
+{
+	background: #F6F6F6;
+}
+
+.run-psl-table > div 
+{
+	
+	grid-column: 1/5;
+	
+
+}
+
+
+
+.run-psl-table > div > div
+{
+	align-self: stretch !important;
+	justify-self: stretch !important;
+	border-bottom:none;
+	border-bottom:1px solid #D9D9D9;
+	
+}
+
+.run-psl-table > div > div:last-child
+{
+	border-bottom: none;
+}
+
+
+.run-psl-rows
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: minmax(40px, auto) !important;
+	
+	
+}
+
+.run-psl-rows > div 
+{
+	
+	border-right:1px solid #D9D9D9;
+	display: grid;
+	grid-template-columns: 1fr;
+	
+}
+
+.run-psl-rows > div:last-child
+{
+	
+	border-right: none;
+}
+
+
+
+
+.run-psl-rows > div > div
+{
+	align-self: center;
+	justify-self: center;
+}
+
+
+
+.suspended-fancy-bet > div:nth-child(2)
+{
+	grid-column: 2/5;
+}
+
+
+.suspended-checkeditem > div:nth-child(2)
+{
+	grid-column: 2/5;
+	
+}
+
+
+.suspended-checkeditem .dark-grey 
+{
+	display: grid !important;
+	grid-template-columns: 1fr !important;
+	grid-template-rows: 1fr;
+	justify-self: stretch;
+	align-self: stretch;
+	border:1px solid rgba(0,0,0,0.2);
+}
+
+
+.suspended-checkeditem .dark-grey > div
+{
+	align-self: center;
+	justify-self: center;
+}
+
+
+.modal-buttons{padding: 0 50px;}
+
+.modal
+{
+	font-family: "roboto condensed";
+	border:none;
+}
+
+
+.modal-content
+{
+	
+}
+
+
+.modal-header
+{
+	background: #2A6334;
+	color: #fff;
+	
+}
+
+.btn{font-family: "roboto condensed";}
+
+.btn-primary
+{
+	background:#63883E;
+	border:none;
+}
+
+
+.btn-primary:hover
+{
+	background: #2A6334;
+}
+
+
+
+.btn-danger
+{
+	background:#D01D2F;
+	border:none;
+}
+
+
+.btn-danger:hover
+{
+	background: #B91828;
+}
+
+
+.close{color: #fff;}
